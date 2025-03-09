@@ -80,23 +80,19 @@ body {
     height: 100vh;
     flex-direction: column;
     margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
 }
 #mediaContainer {
     display: none;
 }
 body {
-    background-image: url('bg.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: url('bg.png') no-repeat center center/cover;
   }
   img {
     max-width: 100%;
     height: auto;
 }
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+@media (max-width: 768px) {
+    body {
+        background: url('phone_bg.png') no-repeat center center/cover;
+    }
 }
