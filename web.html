@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CMSN Trần Ngọc Phương Anh</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button id="showButton" onclick="showMedia()">Bấm vào để thấy điều bất ngờ :D</button>
+    <div id="mediaContainer">
+        <img src="gbangi.png" alt="Displayed Picture">
+        <audio id="audioPlayer" src="nibaging.mp3"></audio>
+    </div>
+
+    <script>
+        function showMedia() {
+            document.getElementById('mediaContainer').style.display = 'block';
+            document.getElementById('showButton').style.display = 'none';
+            document.getElementById('audioPlayer').play();
+        }
+    </script>
+</body>
+
+</html>
